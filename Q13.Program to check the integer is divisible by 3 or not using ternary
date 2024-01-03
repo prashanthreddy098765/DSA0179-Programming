@@ -1,0 +1,17 @@
+#include <iostream>
+
+void checkDivisibilityByThree(int num) {
+    std::string result = (num % 3 == 0) ? "Divisible by 3" : "Not divisible by 3";
+    std::cout << result << std::endl;
+}
+
+int main() {
+    int num;
+
+    std::cout << "Enter an integer: ";
+    std::cin >> num;
+
+    checkDivisibilityByThree(num);
+
+    return 0;
+}
