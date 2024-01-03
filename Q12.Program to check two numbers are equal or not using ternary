@@ -1,0 +1,20 @@
+#include <iostream>
+
+void checkEquality(int num1, int num2) {
+    std::string result = (num1 == num2) ? "Numbers are equal." : "Numbers are not equal.";
+    std::cout << result << std::endl;
+}
+
+int main() {
+    int num1, num2;
+
+    std::cout << "Enter first number: ";
+    std::cin >> num1;
+
+    std::cout << "Enter second number: ";
+    std::cin >> num2;
+
+    checkEquality(num1, num2);
+
+    return 0;
+}
