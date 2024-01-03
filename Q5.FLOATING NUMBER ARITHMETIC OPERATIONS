@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cmath> 
+using namespace std;
+
+int main() {
+    float num1, num2;
+    cout << "Enter first floating-point number: ";
+    cin >> num1;
+    cout << "Enter second floating-point number: ";
+    cin >> num2;
+    float sum = num1 + num2;
+    cout << "Addition: " << num1 << " + " << num2 << " = " << sum << endl;
+
+    float diff = num1 - num2;
+    cout << "Subtraction: " << num1 << " - " << num2 << " = " << diff << endl;
+
+    float product = num1 * num2;
+    cout << "Multiplication: " << num1 << " * " << num2 << " = " << product << endl;
+
+    if (num2 != 0) {
+        float quotient = num1 / num2;
+        cout << "Division: " << num1 << " / " << num2 << " = " << quotient << endl;
+    } else {
+        cout << "Division by zero is undefined." << endl;
+    }
+
+    if (num2 != 0) {
+        float mod = fmod(num1, num2); 
+        cout << "Modulo: " << num1 << " % " << num2 << " = " << mod << endl;
+    } else {
+        cout << "Modulo by zero is undefined." << endl;
+    }
+
+    return 0;
+}
